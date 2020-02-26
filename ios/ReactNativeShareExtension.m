@@ -14,8 +14,13 @@ NSExtensionContext* extensionContext;
     NSString* value;
 }
 
++ (BOOL)requiresMainQueueSetup{
+  return FALSE;
+}
+
 - (UIView*) shareView {
     return nil;
+    
 }
 
 RCT_EXPORT_MODULE();
